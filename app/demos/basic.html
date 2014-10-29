@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/base.css"/>
+	</head>
+	<body>
+		<div id="main">
+			<div id="game">
+
+				<div id="menu">
+					<div class="content">
+						<ul>
+							<li class="active">
+								<a href="#move" onclick="map.action_mode = 'move';"><span>M</span>ove</a>
+							</li>
+							<li>
+								<a href="#construct" onclick="map.action_mode = 'construct';"><span>C</span>onstruct</a>
+							</li>
+							<li>
+								<a href="#hit" onclick="map.action_mode = 'hit';"><span>H</span>it</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- main google map -->
+				<div id="map"></div>
+
+			</div>
+		</div>
+
+		<!-- variables declaration -->
+		<script>
+			MAP_CANVAS_ID         = "map";
+			MAP_INITIALIZE_METHOD = "initialize_map";
+			DEFAULT_STYLE_ID      = "default";
+			DEFAULT_PLAYER_ID     = "me";
+
+			map = null;
+		</script>
+		<!-- game scripts -->
+		<script src="../js/game.js"></script>
+	</body>
+</html>

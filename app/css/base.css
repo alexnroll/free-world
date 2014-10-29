@@ -1,0 +1,51 @@
+/* ************ GLOBAL ************ */
+/* ********************************* */
+html, body{
+	margin:0;
+	padding:0;
+	background: #222428;
+}
+/* Full screen */
+html, body, #game, #main{ height: 100%; }
+
+#menu{
+	height: 20px;
+	background: #202123;
+	padding: 10px;
+}
+#map{ min-height: 100%;}
+
+.content{}
+#menu ul{
+	padding: 0;
+	margin: 0;
+}
+#menu ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+#menu ul li a{
+	color: #9A9FA4;
+	text-decoration: none;
+	font-size: 11px;
+	padding: 5px;
+	border: 1px solid #565A5F;
+	font-family: "Ubuntu Mono";
+	font-weight: 400;
+}
+#menu ul li a span{
+	font-weight: 700;
+	font-size: 11px;
+	color: #C8CCD0;
+}
+#menu ul li.active a{
+	background: #9A9FA4;
+	border: 1px solid #9A9FA4;
+	color: #202123;
+}
+#menu ul li.active a span{
+	color: #202123;
+}
